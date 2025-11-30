@@ -1,0 +1,40 @@
+Checks: >
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  readability-*,
+  misc-*,
+  hicpp-*,
+  -readability-magic-numbers,
+  -hicpp-avoid-goto,
+  -clang-analyzer-cplusplus.NewDeleteLeaks
+
+WarningsAsErrors: >
+  clang-analyzer-*,
+  bugprone-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*
+
+HeaderFilterRegex: '^(include/|src/|test/).*'
+
+CheckOptions:
+  # Naming conventions (readability-identifier-naming)
+  - { key: readability-identifier-naming.NamespaceCase, value: PascalCase }
+  - { key: readability-identifier-naming.ClassCase, value: PascalCase }
+  - { key: readability-identifier-naming.StructCase, value: PascalCase }
+  - { key: readability-identifier-naming.EnumCase, value: PascalCase }
+  - { key: readability-identifier-naming.EnumConstantCase, value: PascalCase }
+  - { key: readability-identifier-naming.FunctionCase, value: PascalCase }
+  - { key: readability-identifier-naming.MethodCase, value: PascalCase }
+  - { key: readability-identifier-naming.VariableCase, value: camelBack }
+  - { key: readability-identifier-naming.LocalVariableCase, value: camelBack }
+  - { key: readability-identifier-naming.ParameterCase, value: camelBack }
+  - { key: readability-identifier-naming.ConstantCase, value: PascalCase }
+  - { key: readability-identifier-naming.PrivateMemberCase, value: CamelCase }
+  - { key: readability-identifier-naming.MemberPrefix, value: m_ }
+  - { key: readability-identifier-naming.PrivateMemberPrefix, value: m_ }
+  - { key: readability-identifier-naming.ProtectedMemberPrefix, value: m_ }

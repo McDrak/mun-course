@@ -1,0 +1,46 @@
+# Based on LLVM but tuned for game-engine style:
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+ColumnLimit: 120
+
+# Braces - K&R / attach style
+BreakBeforeBraces: Allman
+
+# Namespaces
+NamespaceIndentation: All
+
+# Access modifier alignment in classes/structs
+AccessModifierOffset: -4
+
+# Case labels indentation
+IndentCaseLabels: true
+
+# Spaces & parens
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInAngles: false
+SpaceAfterCStyleCast: true
+SpaceBeforeAssignmentOperators: true
+
+# Short functions/if/loops rules
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+
+# Pointer & reference alignment
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# Misc
+DerivePointerAlignment: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+BinPackParameters: false
+BinPackArguments: false
+
+# Keep include order but allow sorting externally with a tool if desired
+SortIncludes: false
+
+# Keep one true brace wrapping style for readability
+BreakBeforeBinaryOperators: NonAssignment
