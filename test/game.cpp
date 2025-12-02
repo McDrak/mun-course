@@ -1,8 +1,9 @@
-#include "Test.hpp"
+#include "AssignmentOne/AssignmentOne.hpp"
 
 int main()
 {
-	MunGame::Test test;
+	MunGame::AssignmentOne test("media/setupAssignmentOne.cfg");
+	test.Init();
 	test.Render();
 
 	return 0;
